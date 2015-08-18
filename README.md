@@ -49,53 +49,53 @@ Higher numbers are better.
                       RUNTIME PERFORMANCE
                       ===================
                       friends
-                   ✓ marko »    2,315 op/s (fastest)
-                    ✗ dust »      761 op/s (67.13% slower)
+                   ✓ marko »    2,345 op/s (fastest)
+                    ✗ dust »      697 op/s (70.28% slower)
                     ✗ tmpl »        1 op/s (99.96% slower)
 
                       if-expression
-                   ✓ marko »  232,734 op/s (fastest)
-                    ✗ dust »   44,510 op/s (80.88% slower)
+                   ✓ marko »  226,559 op/s (fastest)
+                    ✗ dust »   43,262 op/s (80.90% slower)
                     ✗ tmpl »       64 op/s (99.97% slower)
 
                       projects-escaped
-      ✓ marko (native-for) »   67,685 op/s (fastest)
-                   ✗ marko »   64,879 op/s (4.15% slower)
-              ✗ handlebars »   44,686 op/s (33.98% slower)
-                    ✗ dust »   20,411 op/s (69.84% slower)
-                    ✗ tmpl »       64 op/s (99.91% slower)
+      ✓ marko (native-for) »   63,489 op/s (fastest)
+                   ✗ marko »   61,769 op/s (2.71% slower)
+              ✗ handlebars »   43,836 op/s (30.95% slower)
+                    ✗ dust »   20,419 op/s (67.84% slower)
+                    ✗ tmpl »       64 op/s (99.90% slower)
 
                       projects-unescaped
-      ✓ marko (native-for) »  262,196 op/s (fastest)
-                   ✗ marko »  235,742 op/s (10.09% slower)
-              ✗ handlebars »  135,837 op/s (48.19% slower)
-                    ✗ dust »   72,977 op/s (72.17% slower)
+      ✓ marko (native-for) »  247,942 op/s (fastest)
+                   ✗ marko »  219,876 op/s (11.32% slower)
+              ✗ handlebars »  124,578 op/s (49.76% slower)
+                    ✗ dust »   71,776 op/s (71.05% slower)
 
                       reverse-helper
-                   ✓ marko »  345,569 op/s (fastest)
-                    ✗ dust »  268,463 op/s (22.31% slower)
+                   ✓ marko »  324,557 op/s (fastest)
+                    ✗ dust »  256,247 op/s (21.05% slower)
 
                       search-results
-      ✓ marko (native-for) »   35,847 op/s (fastest)
-                   ✗ marko »   29,280 op/s (18.32% slower)
-                    ✗ dust »   10,124 op/s (71.76% slower)
-                    ✗ tmpl »       15 op/s (99.96% slower)
+      ✓ marko (native-for) »   31,095 op/s (fastest)
+                   ✗ marko »   28,784 op/s (7.43% slower)
+                    ✗ dust »   10,566 op/s (66.02% slower)
+                    ✗ tmpl »       15 op/s (99.95% slower)
 
                       simple-1
-                     ✓ dot »  170,273 op/s (fastest)
-      ✗ marko (native-for) »  165,303 op/s (2.92% slower)
-                   ✗ marko »  155,129 op/s (8.89% slower)
-              ✗ handlebars »   88,002 op/s (48.32% slower)
-                    ✗ dust »   75,757 op/s (55.51% slower)
-                    ✗ swig »   72,069 op/s (57.67% slower)
-                    ✗ jade »   62,073 op/s (63.55% slower)
-                ✗ nunjucks »   33,094 op/s (80.56% slower)
-                  ✗ plates »    7,530 op/s (95.58% slower)
+      ✓ marko (native-for) »  147,895 op/s (fastest)
+                     ✗ dot »  146,608 op/s (0.87% slower)
+                   ✗ marko »  143,123 op/s (3.23% slower)
+              ✗ handlebars »   84,509 op/s (42.86% slower)
+                    ✗ dust »   78,668 op/s (46.81% slower)
+                    ✗ swig »   71,148 op/s (51.89% slower)
+                    ✗ jade »   59,533 op/s (59.75% slower)
+                ✗ nunjucks »   33,713 op/s (77.20% slower)
+                  ✗ plates »    7,593 op/s (94.87% slower)
                     ✗ tmpl »       64 op/s (99.96% slower)
 
                       simple-2
-                   ✓ marko »  217,247 op/s (fastest)
-                    ✗ dust »   93,624 op/s (56.90% slower)
+                   ✓ marko »  206,912 op/s (fastest)
+                    ✗ dust »   93,322 op/s (54.90% slower)
                     ✗ tmpl »       64 op/s (99.97% slower)
 ```
 <!-- </performance> -->
