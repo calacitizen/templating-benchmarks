@@ -1,0 +1,55 @@
+<div class="search-results-container">
+
+    <div class="searching" id="searching">
+        <div class="wait-indicator-icon"/> Searching...
+    </div>
+
+    <div id="resultsContainer">
+        <div class="hd">
+            <span class="count"><span id="count">{{totalCount}}</span> results</span>
+            <div class="view-modifiers">
+                <div class="view-select">
+                    View:
+                    <div class="view-icon view-icon-selected" id="viewIconGallery">
+                        <i class="icon-th"/>
+                    </div>
+                    <div class="view-icon" id="viewIconList">
+                        <i class="icon-th-list"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultsTarget">
+            <div class="search-results view-{{view}}">
+                <for data="searchRecord in searchRecords">
+                  <div class="search-item">
+                    <div class="search-item-container drop-shadow">
+                        <div class="img-container">
+                            <img src="{{searchRecord.imgUrl}}">
+                        </div>
+                        <h4 class="title">
+                            <a href="{{searchRecord.viewItemUrl}}">{{searchRecord.title}}</a>
+                        </h4>
+
+                        {{searchRecord.description}}
+                        <if data="searchRecord.featured">
+                          Featured!
+                        </if>
+                        <if data="searchRecord.sizes">
+                          <div>
+                            Sizes available:
+                            <ul>
+                                <for data="size in searchRecords.sizes">
+                                  <li>{{size}}</li>
+                                </for>
+                            </ul>
+                          </div>
+                        </if>
+                    </div>
+                  </div>
+                </for>
+            </div>
+        </div>
+    </div>
+</div>

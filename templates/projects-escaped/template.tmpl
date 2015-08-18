@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <p>{{text}}</p>
+        <for data="project in projects">
+          <a href="{{project.url}}">{{project.name}}</a>
+          <p>{{project.description}}</p>
+        </for>
+        <if data="projects.length === 0">
+            No projects
+        </if>
+    </body>
+</html>

@@ -22,13 +22,13 @@
     "projects-escaped": {
         "gzipped": {
             "dust": 262,
-            "handlebars": 548,
+            "handlebars": 551,
             "marko": 247,
             "marko (native-for)": 269
         },
         "uncompressed": {
             "dust": 563,
-            "handlebars": 1540,
+            "handlebars": 1560,
             "marko": 379,
             "marko (native-for)": 406
         }
@@ -36,13 +36,13 @@
     "projects-unescaped": {
         "gzipped": {
             "dust": 268,
-            "handlebars": 521,
+            "handlebars": 523,
             "marko": 249,
             "marko (native-for)": 273
         },
         "uncompressed": {
             "dust": 595,
-            "handlebars": 1556,
+            "handlebars": 1576,
             "marko": 379,
             "marko (native-for)": 406
         }
@@ -73,21 +73,21 @@
         "gzipped": {
             "dot": 353,
             "dust": 249,
-            "handlebars": 418,
+            "handlebars": 420,
             "jade": 337,
             "marko": 216,
             "marko (native-for)": 237,
-            "nunjucks": 448,
+            "nunjucks": 450,
             "swig": 544
         },
         "uncompressed": {
             "dot": 523,
             "dust": 462,
-            "handlebars": 818,
+            "handlebars": 834,
             "jade": 664,
             "marko": 293,
             "marko (native-for)": 320,
-            "nunjucks": 910,
+            "nunjucks": 934,
             "swig": 2557
         }
     },

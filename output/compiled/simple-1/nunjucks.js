@@ -5,9 +5,9 @@ var output = "";
 try {
 output += "Hello ";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "name"), env.opts.autoescape);
-output += "!\n   \n";
+output += "!\r\n   \r\n";
 if(runtime.contextOrFrameLookup(context, frame, "colors") && runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "colors")),"length", env.opts.autoescape)) {
-output += "\n<ul>\n    ";
+output += "\r\n<ul>\r\n    ";
 frame = frame.push();
 var t_3 = runtime.contextOrFrameLookup(context, frame, "colors");
 if(t_3) {var t_2 = t_3.length;
@@ -21,18 +21,18 @@ frame.set("loop.revindex0", t_2 - t_1 - 1);
 frame.set("loop.first", t_1 === 0);
 frame.set("loop.last", t_1 === t_2 - 1);
 frame.set("loop.length", t_2);
-output += "\n    <li class=\"color\">";
+output += "\r\n    <li class=\"color\">";
 output += runtime.suppressValue(t_4, env.opts.autoescape);
-output += "</li>\n    ";
+output += "</li>\r\n    ";
 ;
 }
 }
 frame = frame.pop();
-output += "\n</ul>\n";
+output += "\r\n</ul>\r\n";
 ;
 }
 else {
-output += "\n<div>\n    No colors!\n</div>\n";
+output += "\r\n<div>\r\n    No colors!\r\n</div>\r\n";
 ;
 }
 cb(null, output);

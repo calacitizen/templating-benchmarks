@@ -1,0 +1,16 @@
+<div>
+<for data="account in accounts">
+  <if data="account.accountStatus === 'closed'">
+    <div>Your account has been closed!</div>
+  </if>
+  <if data="account.accountStatus === 'suspended'">
+    <div>
+      Your account has been temporarily suspended
+    </div>
+  </if>
+  <if data="account.accountStatus !== 'closed' && account.accountStatus !== 'suspended'">
+    Bank balance:
+    <span>{{account.balanceFormatted}}</span>
+  </if>
+</for>
+</div>

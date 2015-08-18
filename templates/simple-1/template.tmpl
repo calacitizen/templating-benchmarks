@@ -1,0 +1,11 @@
+Hello {{name}}!
+<if data="colors.length gt 0">
+  <ul>
+    <for data="color in colors">
+      <li class="color">{{color}}</li>
+    </for>
+  </ul>
+</if>
+<if data="colors.lenth === 0">
+  No colors!
+</if>

@@ -49,48 +49,54 @@ Higher numbers are better.
                       RUNTIME PERFORMANCE
                       ===================
                       friends
-                   ✓ marko »    2,877 op/s (fastest)
-                    ✗ dust »      808 op/s (71.92% slower)
+                   ✓ marko »    2,315 op/s (fastest)
+                    ✗ dust »      761 op/s (67.13% slower)
+                    ✗ tmpl »        1 op/s (99.96% slower)
 
                       if-expression
-                   ✓ marko »  304,633 op/s (fastest)
-                    ✗ dust »   48,105 op/s (84.21% slower)
+                   ✓ marko »  232,734 op/s (fastest)
+                    ✗ dust »   44,510 op/s (80.88% slower)
+                    ✗ tmpl »       64 op/s (99.97% slower)
 
                       projects-escaped
-      ✓ marko (native-for) »   86,162 op/s (fastest)
-                   ✗ marko »   80,020 op/s (7.13% slower)
-              ✗ handlebars »   50,934 op/s (40.89% slower)
-                    ✗ dust »   33,381 op/s (61.26% slower)
+      ✓ marko (native-for) »   67,685 op/s (fastest)
+                   ✗ marko »   64,879 op/s (4.15% slower)
+              ✗ handlebars »   44,686 op/s (33.98% slower)
+                    ✗ dust »   20,411 op/s (69.84% slower)
+                    ✗ tmpl »       64 op/s (99.91% slower)
 
                       projects-unescaped
-      ✓ marko (native-for) »  301,733 op/s (fastest)
-                   ✗ marko »  300,871 op/s (0.29% slower)
-              ✗ handlebars »  125,762 op/s (58.32% slower)
-                    ✗ dust »   75,857 op/s (74.86% slower)
+      ✓ marko (native-for) »  262,196 op/s (fastest)
+                   ✗ marko »  235,742 op/s (10.09% slower)
+              ✗ handlebars »  135,837 op/s (48.19% slower)
+                    ✗ dust »   72,977 op/s (72.17% slower)
 
                       reverse-helper
-                   ✓ marko »  440,843 op/s (fastest)
-                    ✗ dust »  256,473 op/s (41.82% slower)
+                   ✓ marko »  345,569 op/s (fastest)
+                    ✗ dust »  268,463 op/s (22.31% slower)
 
                       search-results
-      ✓ marko (native-for) »   36,505 op/s (fastest)
-                   ✗ marko »   32,536 op/s (10.87% slower)
-                    ✗ dust »   11,336 op/s (68.95% slower)
+      ✓ marko (native-for) »   35,847 op/s (fastest)
+                   ✗ marko »   29,280 op/s (18.32% slower)
+                    ✗ dust »   10,124 op/s (71.76% slower)
+                    ✗ tmpl »       15 op/s (99.96% slower)
 
                       simple-1
-                     ✓ dot »  203,176 op/s (fastest)
-      ✗ marko (native-for) »  190,609 op/s (6.19% slower)
-                   ✗ marko »  178,322 op/s (12.23% slower)
-                    ✗ dust »   87,875 op/s (56.75% slower)
-              ✗ handlebars »   71,929 op/s (64.60% slower)
-                    ✗ swig »   52,927 op/s (73.95% slower)
-                    ✗ jade »   43,379 op/s (78.65% slower)
-                ✗ nunjucks »   29,190 op/s (85.63% slower)
-                  ✗ plates »   10,291 op/s (94.93% slower)
+                     ✓ dot »  170,273 op/s (fastest)
+      ✗ marko (native-for) »  165,303 op/s (2.92% slower)
+                   ✗ marko »  155,129 op/s (8.89% slower)
+              ✗ handlebars »   88,002 op/s (48.32% slower)
+                    ✗ dust »   75,757 op/s (55.51% slower)
+                    ✗ swig »   72,069 op/s (57.67% slower)
+                    ✗ jade »   62,073 op/s (63.55% slower)
+                ✗ nunjucks »   33,094 op/s (80.56% slower)
+                  ✗ plates »    7,530 op/s (95.58% slower)
+                    ✗ tmpl »       64 op/s (99.96% slower)
 
                       simple-2
-                   ✓ marko »  275,953 op/s (fastest)
-                    ✗ dust »   93,964 op/s (65.95% slower)
+                   ✓ marko »  217,247 op/s (fastest)
+                    ✗ dust »   93,624 op/s (56.90% slower)
+                    ✗ tmpl »       64 op/s (99.97% slower)
 ```
 <!-- </performance> -->
 
@@ -121,8 +127,8 @@ Lower numbers are better.
                                     5.73% larger              32.68% larger
       ✗ marko (native-for) »   269 bytes gzipped     406 bytes uncompressed
                                     8.18% larger               6.65% larger
-              ✗ handlebars »   548 bytes gzipped    1540 bytes uncompressed
-                                   54.93% larger              75.39% larger
+              ✗ handlebars »   551 bytes gzipped    1560 bytes uncompressed
+                                   55.17% larger              75.71% larger
 
                       projects-unescaped
                    ✓ marko »   249 bytes gzipped     379 bytes uncompressed
@@ -131,8 +137,8 @@ Lower numbers are better.
                                     7.09% larger              36.30% larger
       ✗ marko (native-for) »   273 bytes gzipped     406 bytes uncompressed
                                     8.79% larger               6.65% larger
-              ✗ handlebars »   521 bytes gzipped    1556 bytes uncompressed
-                                   52.21% larger              75.64% larger
+              ✗ handlebars »   523 bytes gzipped    1576 bytes uncompressed
+                                   52.39% larger              75.95% larger
 
                       reverse-helper
                     ✓ dust »   151 bytes gzipped     321 bytes uncompressed
@@ -159,10 +165,10 @@ Lower numbers are better.
                                    35.91% larger              55.87% larger
                      ✗ dot »   353 bytes gzipped     523 bytes uncompressed
                                    38.81% larger              43.98% larger
-              ✗ handlebars »   418 bytes gzipped     818 bytes uncompressed
-                                   48.33% larger              64.18% larger
-                ✗ nunjucks »   448 bytes gzipped     910 bytes uncompressed
-                                   51.79% larger              67.80% larger
+              ✗ handlebars »   420 bytes gzipped     834 bytes uncompressed
+                                   48.57% larger              64.87% larger
+                ✗ nunjucks »   450 bytes gzipped     934 bytes uncompressed
+                                   52.00% larger              68.63% larger
                     ✗ swig »   544 bytes gzipped    2557 bytes uncompressed
                                    60.29% larger              88.54% larger
 
